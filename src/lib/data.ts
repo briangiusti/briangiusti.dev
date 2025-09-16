@@ -79,8 +79,8 @@ export interface PortfolioData {
 export const portfolioData: PortfolioData = {
   personal: {
     name: "Brian Giusti",
-    title: "Software Engineer & Product Manager",
-    subtitle: "Building software products from idea to delivery. ",
+    title: "Software Engineer",
+    subtitle: "Building products that bridge technology and people.",
     profileImage: "👨‍💻",
     codeIcon: "</>"
   },
@@ -173,22 +173,22 @@ export const portfolioData: PortfolioData = {
     subtitle: "Professional credentials and educational achievements.",
     items: [
       {
+        id: "degree",
+        title: "Bachelor of Science in Computer Science",
+        issuer: "Syracuse University",
+        date: "2021",
+        description: "Comprehensive foundation in software engineering and algorithms",
+        icon: "/SUFAV.jpeg",
+        color: "orange"
+      },
+      {
         id: "uva",
         title: "Product Management Certificate",
         issuer: "University of Virginia",
         date: "2025",
         description: "User Interviews, Product Strategy, Product Roadmaps, Product Market-fit, A/B testing, Wireframing, and more.",
-        icon: "☁️",
+        icon: "/UVA.png",
         color: "blue"
-      },
-      {
-        id: "jor",
-        title: "Joy of React + CSS for JS Developers",
-        issuer: "Josh W Comeau",
-        date: "2024",
-        description: "A deep dive into React and CSS, with a focus on building a strong foundation in web development.",
-        icon: "🔄",
-        color: "green"
       },
       {
         id: "umass",
@@ -196,17 +196,17 @@ export const portfolioData: PortfolioData = {
         issuer: "Umass Global",
         date: "2023",
         description: "Frontend focusing on React, backend focusing on Node.js, and database management using PostgreSQL.",
-        icon: "📋",
+        icon: "/UMASS.jpg",
         color: "purple"
       },
       {
-        id: "degree",
-        title: "Bachelor of Science in Computer Science",
-        issuer: "Syracuse University",
-        date: "2021",
-        description: "Comprehensive foundation in software engineering and algorithms",
-        icon: "🎓",
-        color: "orange"
+        id: "jor",
+        title: "Joy of React + CSS for JS Developers",
+        issuer: "Josh W Comeau",
+        date: "2024",
+        description: "A deep dive into React and CSS, with a focus on building a strong foundation in web development.",
+        icon: "/JORFAV.png",
+        color: "green"
       }
     ]
   },

@@ -1,6 +1,6 @@
-'use client';
+"use client";
 
-import Link from 'next/link';
+import Link from "next/link";
 
 interface HeaderProps {
   name: string;
@@ -15,16 +15,34 @@ export default function Header({ name }: HeaderProps) {
             {name}
           </Link>
           <nav className="hidden md:flex space-x-8">
-            <Link href="#about" className="text-gray-700 hover:text-purple-600 transition-colors">
+            <Link
+              href="#about"
+              className="text-gray-700 hover:text-purple-600 transition-colors"
+            >
               About
             </Link>
-            <Link href="#work" className="text-gray-700 hover:text-purple-600 transition-colors">
+            <Link
+              href="#work"
+              className="text-gray-700 hover:text-purple-600 transition-colors"
+            >
               Work
             </Link>
-            <Link href="#skills" className="text-gray-700 hover:text-purple-600 transition-colors">
+            <Link
+              href="#skills"
+              className="text-gray-700 hover:text-purple-600 transition-colors"
+            >
               Skills
             </Link>
-            <Link href="#contact" className="text-gray-700 hover:text-purple-600 transition-colors">
+            <Link
+              href="#certifications"
+              className="text-gray-700 hover:text-purple-600 transition-colors"
+            >
+              Certifications
+            </Link>
+            <Link
+              href="#contact"
+              className="text-gray-700 hover:text-purple-600 transition-colors"
+            >
               Contact
             </Link>
           </nav>

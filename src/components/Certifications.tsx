@@ -1,6 +1,7 @@
 'use client';
 
 import { Certification } from '../lib/data';
+import Image from "next/image";
 
 interface CertificationsProps {
   title: string;
@@ -19,6 +20,17 @@ export default function Certifications({ title, subtitle, items }: Certification
     }
   };
 
+  const getImageSize = (certId: string) => {
+    // Use larger dimensions for better quality, then scale down with CSS
+    switch (certId) {
+      case 'uva':
+      case 'umass':
+        return { width: 80, height: 80, scale: 'scale-75' };
+      default:
+        return { width: 64, height: 64, scale: 'scale-100' };
+    }
+  };
+
   return (
     <section id="certifications" className="py-16 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -32,8 +44,15 @@ export default function Certifications({ title, subtitle, items }: Certification
             <div key={cert.id} className="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100">
               <div className="p-6">
                 <div className="flex items-start gap-4">
-                  <div className={`w-16 h-16 ${getColorClasses(cert.color)} rounded-full flex items-center justify-center flex-shrink-0`}>
-                    <div className="text-2xl">{cert.icon}</div>
+                  <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center flex-shrink-0 shadow-md border-2 border-gray-100 overflow-hidden">
+                    <Image 
+                      className={`rounded-full object-contain transform transition-transform ${getImageSize(cert.id).scale}`}
+                      src={cert.icon} 
+                      alt={cert.title} 
+                      width={getImageSize(cert.id).width} 
+                      height={getImageSize(cert.id).height}
+                      quality={100}
+                    />
                   </div>
                   <div className="flex-1 min-w-0">
                     <h3 className="text-xl font-semibold text-gray-900 mb-2">{cert.title}</h3>
