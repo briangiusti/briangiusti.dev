@@ -15,8 +15,6 @@ export default function Home() {
         name={portfolioData.personal.name}
         title={portfolioData.personal.title}
         subtitle={portfolioData.personal.subtitle}
-        profileImage={portfolioData.personal.profileImage}
-        codeIcon={portfolioData.personal.codeIcon}
       />
       <About 
         title={portfolioData.about.title}

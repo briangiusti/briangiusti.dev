@@ -79,8 +79,8 @@ export interface PortfolioData {
 export const portfolioData: PortfolioData = {
   personal: {
     name: "Brian Giusti",
-    title: "Software Engineer",
-    subtitle: "Building products that bridge technology and people.",
+    title: "Brian Giusti",
+    subtitle: "Software Engineer | Aspiring Product Manager",
     profileImage: "👨‍💻",
     codeIcon: "</>"
   },
@@ -89,23 +89,23 @@ export const portfolioData: PortfolioData = {
     subtitle: "Passionate about creating meaningful experiences.",
     features: [
       {
-        id: "creative",
-        title: "Creative Problem Solver",
-        description: "I love tackling complex challenges and finding elegant solutions that make a real impact.",
+        id: "solutionOriented",
+        title: "Outcome driven",
+        description: "Crafting solutions that fit the problem, not forcing the problem to fit the solution.",
         icon: "💡",
         color: "purple"
       },
       {
-        id: "innovation",
-        title: "Innovation Driven",
-        description: "Always exploring new technologies and methodologies to stay ahead of the curve.",
+        id: "dataDriven",
+        title: "Data Informed Designs",
+        description: "Making decisions on what is best for the user from an engineering and product perspective.",
         icon: "🚀",
         color: "orange"
       },
       {
-        id: "collaboration",
-        title: "Collaborative Spirit",
-        description: "I thrive in team environments and believe great work comes from great collaboration.",
+        id: "leadership",
+        title: "Leadership",
+        description: "I thrive in team environments and believe great products come from collaboration.",
         icon: "🤝",
         color: "green"
       }
@@ -145,27 +145,27 @@ export const portfolioData: PortfolioData = {
       {
         id: "frontend",
         title: "Frontend",
-        icon: "</>",
-        skills: ["React", "Vue.js", "TypeScript", "Tailwind CSS"]
+        icon: "",
+        skills: ["React", "Next.js", "SCSS", "Tailwind CSS"]
       },
       {
         id: "backend",
         title: "Backend",
         icon: "⚙️",
-        skills: ["Node.js", "Python", "PostgreSQL", "MongoDB"]
+        skills: ["Node.js", "ExpressJS", "PostgreSQL", "MongoDB"]
       },
       {
-        id: "design",
-        title: "Design",
+        id: "mobile",
+        title: "Mobile",
         icon: "🎨",
-        skills: ["Figma", "Adobe Creative Suite", "UI/UX"]
+        skills: ["Flutter", "React Native"]
       },
       {
-        id: "tools",
-        title: "Tools",
+        id: "experimentation",
+        title: "Experimentation",
         icon: "🔧",
-        skills: ["Git", "Docker", "AWS", "Vercel"]
-      }
+        skills: ["StatSig", "Optimizely", "Amplitude", "Snowflake"]
+      },
     ]
   },
   certifications: {
@@ -211,9 +211,9 @@ export const portfolioData: PortfolioData = {
     ]
   },
   contact: {
-    title: "Let's Work Together",
+    title: "Contact Me",
     subtitle: "Ready to bring your ideas to life? I'd love to hear from you.",
-    email: "brianjohngiusti@gmail.com",
+    email: "giusti.intake@gmail.com",
     resumes: [
       {
         id: "software",
@@ -230,20 +230,14 @@ export const portfolioData: PortfolioData = {
       {
         id: "linkedin",
         name: "LinkedIn",
-        icon: "💼",
+        icon: "/LINKEDIN.png",
         url: "https://www.linkedin.com/in/brian-giusti/"
       },
       {
         id: "github",
         name: "GitHub",
-        icon: "🐙",
+        icon: "/GITHUB.jpeg",
         url: "https://github.com/briangiusti"
-      },
-      {
-        id: "twitter",
-        name: "Twitter",
-        icon: "🐦",
-        url: "https://x.com/brian_giusti"
       }
     ],
     copyright: "© 2025 Brian Giusti. All rights reserved."

@@ -56,7 +56,11 @@ export default function Contact({ title, subtitle, email, resumes, socialLinks, 
               rel="noopener noreferrer"
             >
               <div className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-gray-700">
-                <span className="text-lg">{social.icon}</span>
+                <img 
+                  src={social.icon} 
+                  alt={social.name}
+                  className="w-6 h-6 object-contain"
+                />
               </div>
             </a>
           ))}
