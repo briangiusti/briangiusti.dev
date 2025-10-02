@@ -22,12 +22,6 @@ export default function Header({ name }: HeaderProps) {
               About
             </Link>
             <Link
-              href="#work"
-              className="text-gray-700 hover:text-purple-600 transition-colors"
-            >
-              Work
-            </Link>
-            <Link
               href="#skills"
               className="text-gray-700 hover:text-purple-600 transition-colors"
             >

@@ -113,12 +113,12 @@ export const portfolioData: PortfolioData = {
   },
   work: {
     title: "Featured Work",
-    subtitle: "A selection of projects I'm proud of.",
+    subtitle: "A selection of projects",
     projects: [
       {
         id: "ecommerce",
-        title: "E-Commerce Platform",
-        description: "Full-stack application with modern UI/UX design",
+        title: "Tea Time Golf",
+        description: "An e-commerce platform for a golf apparel",
         image: "🛒",
         tags: ["React", "Node.js"]
       },
@@ -146,7 +146,7 @@ export const portfolioData: PortfolioData = {
         id: "frontend",
         title: "Frontend",
         icon: "",
-        skills: ["React", "Next.js", "SCSS", "Tailwind CSS"]
+        skills: ["React", "Next.js", "Gatsby", "TypeScript"]
       },
       {
         id: "backend",

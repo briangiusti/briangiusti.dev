@@ -21,11 +21,6 @@ export default function Home() {
         subtitle={portfolioData.about.subtitle}
         features={portfolioData.about.features}
       />
-      <FeaturedWork 
-        title={portfolioData.work.title}
-        subtitle={portfolioData.work.subtitle}
-        projects={portfolioData.work.projects}
-      />
       <Skills 
         title={portfolioData.skills.title}
         subtitle={portfolioData.skills.subtitle}
